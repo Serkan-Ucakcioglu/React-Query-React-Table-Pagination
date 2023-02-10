@@ -5,7 +5,6 @@ const api = axios.create({
 });
 
 export const getPosts = async () => {
-  const { data } = await api("/posts");
-
+  const { data } = await api.get("/users");
   return data;
 };
