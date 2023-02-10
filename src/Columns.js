@@ -4,20 +4,12 @@ export const columns = [
     accessor: "id",
   },
   {
-    Header: "First Name",
-    accessor: "name",
+    Header: "Title",
+    accessor: "title",
   },
 
   {
-    Header: "Email",
-    accessor: "email",
-  },
-  {
-    Header: "Phone",
-    accessor: "phone",
-  },
-  {
-    Header: "Website",
-    accessor: "website",
+    Header: "Body",
+    accessor: "body",
   },
 ];
