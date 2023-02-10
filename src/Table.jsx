@@ -50,12 +50,13 @@ function Table({ data }) {
           })}
         </tbody>
       </table>
-      <div className="pagination mt-4 border border-black">
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-          {"<"}
-        </button>{" "}
-        <button onClick={() => nextPage()} disabled={!canNextPage}>
-          {">"}
+      <div className="pagination mt-4 border border-black flex justify-between items-center p-2">
+        <button
+          onClick={() => previousPage()}
+          disabled={!canPreviousPage}
+          className="p-1 rounded border border-black bg-white text-black"
+        >
+          prev
         </button>{" "}
         <span>
           Page{" "}
@@ -63,6 +64,13 @@ function Table({ data }) {
             {pageIndex + 1} of {pageOptions.length}
           </strong>{" "}
         </span>
+        <button
+          onClick={() => nextPage()}
+          disabled={!canNextPage}
+          className="p-1 border border-black bg-white text-black"
+        >
+          next
+        </button>{" "}
       </div>
     </div>
   );
