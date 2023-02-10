@@ -7,8 +7,8 @@ function App() {
   const { data, isSuccess } = useQuery(["reoı"], getPosts);
 
   return (
-    <div className="App">
-      <div className="container">{isSuccess && <Table data={data} />}</div>
+    <div className="App w-full flex justify-center">
+      {isSuccess && <Table data={data} />}
     </div>
   );
 }
